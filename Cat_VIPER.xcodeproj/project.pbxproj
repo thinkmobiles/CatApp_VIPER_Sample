@@ -7,39 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72E2B2C4BECFCA8B919D7221 /* Pods_Cat_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F40667C67127CD307666175 /* Pods_Cat_VIPERTests.framework */; };
+		920D12E174E31C9AE7D04222 /* Pods_Cat_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F2ABD8EA4525D2BCEBA80B /* Pods_Cat_VIPER.framework */; };
+		D009DF3C1E4DE8BB00B633CC /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009DF3B1E4DE8BB00B633CC /* View.swift */; };
+		D009DF3E1E4DE9C100B633CC /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D009DF3D1E4DE9C100B633CC /* Presenter.swift */; };
+		D0DBFC0F1E48C664002CE736 /* SaveImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DBFC0E1E48C664002CE736 /* SaveImageInteractor.swift */; };
+		E15A13811E2C015E00A10078 /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A13801E2C015E00A10078 /* TestPresenter.swift */; };
+		E15A13831E2C06AB00A10078 /* XCTestHTTPStubExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A13821E2C06AB00A10078 /* XCTestHTTPStubExtension.swift */; };
+		E15A13851E2C06C600A10078 /* CatProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A13841E2C06C600A10078 /* CatProviderTest.swift */; };
+		E15A138B1E2C0ACB00A10078 /* stubbedCatImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E15A138A1E2C0ACB00A10078 /* stubbedCatImage.jpg */; };
 		E16522F01E26C7E3000D8E1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16522EF1E26C7E3000D8E1C /* AppDelegate.swift */; };
-		E16522F21E26C7E3000D8E1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16522F11E26C7E3000D8E1C /* ViewController.swift */; };
 		E16522F51E26C7E3000D8E1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16522F31E26C7E3000D8E1C /* Main.storyboard */; };
 		E16522F71E26C7E3000D8E1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16522F61E26C7E3000D8E1C /* Assets.xcassets */; };
 		E16522FA1E26C7E3000D8E1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16522F81E26C7E3000D8E1C /* LaunchScreen.storyboard */; };
+		E16523091E26D591000D8E1C /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16523081E26D591000D8E1C /* Cat.swift */; };
+		E165230B1E26D597000D8E1C /* CatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165230A1E26D597000D8E1C /* CatProvider.swift */; };
+		E165230D1E26DA48000D8E1C /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165230C1E26DA48000D8E1C /* Dependencies.swift */; };
+		E16523141E26DB31000D8E1C /* LoadCatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16523131E26DB31000D8E1C /* LoadCatInteractor.swift */; };
+		E16523191E27C3F1000D8E1C /* LoadCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16523181E27C3F1000D8E1C /* LoadCatViewController.swift */; };
+		E165231C1E27C886000D8E1C /* LoadCatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165231B1E27C886000D8E1C /* LoadCatPresenter.swift */; };
+		E165231F1E27D8A6000D8E1C /* LoadCatViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165231E1E27D8A6000D8E1C /* LoadCatViewWireframe.swift */; };
+		E1A9DD231E3A68D00036D0CD /* EditCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD221E3A68D00036D0CD /* EditCatViewController.swift */; };
+		E1A9DD251E3A6B2F0036D0CD /* ImageFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD241E3A6B2F0036D0CD /* ImageFilterCell.swift */; };
+		E1A9DD271E3A6B930036D0CD /* EditCatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD261E3A6B930036D0CD /* EditCatPresenter.swift */; };
+		E1A9DD2A1E3A6BF00036D0CD /* FilterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD291E3A6BF00036D0CD /* FilterOperation.swift */; };
+		E1A9DD2C1E3A6C560036D0CD /* FilterCatImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD2B1E3A6C560036D0CD /* FilterCatImageInteractor.swift */; };
+		E1A9DD2E1E3A7B550036D0CD /* PrepareSampleImagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD2D1E3A7B550036D0CD /* PrepareSampleImagesInteractor.swift */; };
+		E1A9DD301E3A83760036D0CD /* EditCatWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A9DD2F1E3A83760036D0CD /* EditCatWireframe.swift */; };
+		E1FAFB8A1E45E0C2006727F1 /* TestEditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAFB891E45E0C2006727F1 /* TestEditScreen.swift */; };
+		E1FAFB8C1E49084A006727F1 /* TestFilterCatImageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAFB8B1E49084A006727F1 /* TestFilterCatImageInteractor.swift */; };
+		E1FAFB8E1E49134E006727F1 /* TestPrepareSampleImageInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FAFB8D1E49134E006727F1 /* TestPrepareSampleImageInput.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E15A137B1E2C00AC00A10078 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E16522E41E26C7E3000D8E1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E16522EB1E26C7E3000D8E1C;
+			remoteInfo = Cat_VIPER;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		7EDF71724F92FB0D75E22345 /* Pods-Cat_VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat_VIPER.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat_VIPER/Pods-Cat_VIPER.release.xcconfig"; sourceTree = "<group>"; };
+		7F40667C67127CD307666175 /* Pods_Cat_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F2ABD8EA4525D2BCEBA80B /* Pods_Cat_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cat_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F6826CC28221463B13CD21 /* Pods-Cat_VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat_VIPER.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat_VIPER/Pods-Cat_VIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		CC50DB7AA9D4EEE2030DFBD1 /* Pods-Cat_VIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat_VIPERTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cat_VIPERTests/Pods-Cat_VIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D009DF3B1E4DE8BB00B633CC /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		D009DF3D1E4DE9C100B633CC /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		D0DBFC0E1E48C664002CE736 /* SaveImageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveImageInteractor.swift; sourceTree = "<group>"; };
+		E15A13761E2C00AC00A10078 /* Cat_VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cat_VIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15A137A1E2C00AC00A10078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15A13801E2C015E00A10078 /* TestPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		E15A13821E2C06AB00A10078 /* XCTestHTTPStubExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestHTTPStubExtension.swift; sourceTree = "<group>"; };
+		E15A13841E2C06C600A10078 /* CatProviderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatProviderTest.swift; sourceTree = "<group>"; };
+		E15A138A1E2C0ACB00A10078 /* stubbedCatImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stubbedCatImage.jpg; sourceTree = "<group>"; };
 		E16522EC1E26C7E3000D8E1C /* Cat_VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cat_VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E16522EF1E26C7E3000D8E1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E16522F11E26C7E3000D8E1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E16522EF1E26C7E3000D8E1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		E16522F41E26C7E3000D8E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E16522F61E26C7E3000D8E1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E16522F91E26C7E3000D8E1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E16522FB1E26C7E3000D8E1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16523081E26D591000D8E1C /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		E165230A1E26D597000D8E1C /* CatProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatProvider.swift; sourceTree = "<group>"; };
+		E165230C1E26DA48000D8E1C /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		E16523131E26DB31000D8E1C /* LoadCatInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCatInteractor.swift; sourceTree = "<group>"; };
+		E16523181E27C3F1000D8E1C /* LoadCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCatViewController.swift; sourceTree = "<group>"; };
+		E165231B1E27C886000D8E1C /* LoadCatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCatPresenter.swift; sourceTree = "<group>"; };
+		E165231E1E27D8A6000D8E1C /* LoadCatViewWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCatViewWireframe.swift; sourceTree = "<group>"; };
+		E1A9DD221E3A68D00036D0CD /* EditCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCatViewController.swift; sourceTree = "<group>"; };
+		E1A9DD241E3A6B2F0036D0CD /* ImageFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterCell.swift; sourceTree = "<group>"; };
+		E1A9DD261E3A6B930036D0CD /* EditCatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCatPresenter.swift; sourceTree = "<group>"; };
+		E1A9DD291E3A6BF00036D0CD /* FilterOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOperation.swift; sourceTree = "<group>"; };
+		E1A9DD2B1E3A6C560036D0CD /* FilterCatImageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCatImageInteractor.swift; sourceTree = "<group>"; };
+		E1A9DD2D1E3A7B550036D0CD /* PrepareSampleImagesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareSampleImagesInteractor.swift; sourceTree = "<group>"; };
+		E1A9DD2F1E3A83760036D0CD /* EditCatWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditCatWireframe.swift; sourceTree = "<group>"; };
+		E1FAFB891E45E0C2006727F1 /* TestEditScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEditScreen.swift; sourceTree = "<group>"; };
+		E1FAFB8B1E49084A006727F1 /* TestFilterCatImageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFilterCatImageInteractor.swift; sourceTree = "<group>"; };
+		E1FAFB8D1E49134E006727F1 /* TestPrepareSampleImageInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestPrepareSampleImageInput.swift; path = Resources/TestPrepareSampleImageInput.swift; sourceTree = "<group>"; };
+		E4DE953B3035DBAB6232C74C /* Pods-Cat_VIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cat_VIPERTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cat_VIPERTests/Pods-Cat_VIPERTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E15A13731E2C00AC00A10078 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E2B2C4BECFCA8B919D7221 /* Pods_Cat_VIPERTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E16522E91E26C7E3000D8E1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920D12E174E31C9AE7D04222 /* Pods_Cat_VIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A4D275F6DBC158D3415243 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F6826CC28221463B13CD21 /* Pods-Cat_VIPER.debug.xcconfig */,
+				7EDF71724F92FB0D75E22345 /* Pods-Cat_VIPER.release.xcconfig */,
+				CC50DB7AA9D4EEE2030DFBD1 /* Pods-Cat_VIPERTests.debug.xcconfig */,
+				E4DE953B3035DBAB6232C74C /* Pods-Cat_VIPERTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58FB1B97E99810F4CA06D636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2ABD8EA4525D2BCEBA80B /* Pods_Cat_VIPER.framework */,
+				7F40667C67127CD307666175 /* Pods_Cat_VIPERTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D009DF3A1E4DE8AF00B633CC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D009DF3B1E4DE8BB00B633CC /* View.swift */,
+				D009DF3D1E4DE9C100B633CC /* Presenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E15A13771E2C00AC00A10078 /* Cat_VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				E15A13881E2C0ACB00A10078 /* Resources */,
+				E15A13841E2C06C600A10078 /* CatProviderTest.swift */,
+				E15A13801E2C015E00A10078 /* TestPresenter.swift */,
+				E15A13821E2C06AB00A10078 /* XCTestHTTPStubExtension.swift */,
+				E15A137A1E2C00AC00A10078 /* Info.plist */,
+				E1FAFB891E45E0C2006727F1 /* TestEditScreen.swift */,
+				E1FAFB8D1E49134E006727F1 /* TestPrepareSampleImageInput.swift */,
+				E1FAFB8B1E49084A006727F1 /* TestFilterCatImageInteractor.swift */,
+			);
+			path = Cat_VIPERTests;
+			sourceTree = "<group>";
+		};
+		E15A13881E2C0ACB00A10078 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E15A13891E2C0ACB00A10078 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E15A13891E2C0ACB00A10078 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E15A138A1E2C0ACB00A10078 /* stubbedCatImage.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		E16522E31E26C7E3000D8E1C = {
 			isa = PBXGroup;
 			children = (
 				E16522EE1E26C7E3000D8E1C /* Cat_VIPER */,
+				E15A13771E2C00AC00A10078 /* Cat_VIPERTests */,
 				E16522ED1E26C7E3000D8E1C /* Products */,
+				14A4D275F6DBC158D3415243 /* Pods */,
+				58FB1B97E99810F4CA06D636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				E16522EC1E26C7E3000D8E1C /* Cat_VIPER.app */,
+				E15A13761E2C00AC00A10078 /* Cat_VIPERTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +193,7 @@
 		E16522EE1E26C7E3000D8E1C /* Cat_VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				E16522EF1E26C7E3000D8E1C /* AppDelegate.swift */,
-				E16522F11E26C7E3000D8E1C /* ViewController.swift */,
+				E16523011E26D3F3000D8E1C /* Classes */,
 				E16522F31E26C7E3000D8E1C /* Main.storyboard */,
 				E16522F61E26C7E3000D8E1C /* Assets.xcassets */,
 				E16522F81E26C7E3000D8E1C /* LaunchScreen.storyboard */,
@@ -64,16 +202,217 @@
 			path = Cat_VIPER;
 			sourceTree = "<group>";
 		};
+		E16523011E26D3F3000D8E1C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E16523021E26D421000D8E1C /* Common */,
+				E165230E1E26DA82000D8E1C /* Modules */,
+				E16522EF1E26C7E3000D8E1C /* AppDelegate.swift */,
+				E165230C1E26DA48000D8E1C /* Dependencies.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E16523021E26D421000D8E1C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D009DF3A1E4DE8AF00B633CC /* Protocols */,
+				E1A9DD281E3A6BD50036D0CD /* Utilities */,
+				E16523061E26D4F7000D8E1C /* Store */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E16523061E26D4F7000D8E1C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E16523071E26D51D000D8E1C /* Entities */,
+				E165230A1E26D597000D8E1C /* CatProvider.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		E16523071E26D51D000D8E1C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E16523081E26D591000D8E1C /* Cat.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E165230E1E26DA82000D8E1C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF2EBF1E3A676200CC0B3F /* EditCat */,
+				E165230F1E26DAAF000D8E1C /* LoadCat */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E165230F1E26DAAF000D8E1C /* LoadCat */ = {
+			isa = PBXGroup;
+			children = (
+				E16523101E26DAE6000D8E1C /* ApplicationLogic */,
+				E16523111E26DAE6000D8E1C /* UserInterface */,
+			);
+			path = LoadCat;
+			sourceTree = "<group>";
+		};
+		E16523101E26DAE6000D8E1C /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				E16523121E26DB1D000D8E1C /* Interactor */,
+			);
+			path = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		E16523111E26DAE6000D8E1C /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				E165231D1E27D899000D8E1C /* Wireframe */,
+				E165231A1E27C5DF000D8E1C /* Presenter */,
+				E16523171E27C3BA000D8E1C /* View */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		E16523121E26DB1D000D8E1C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E16523131E26DB31000D8E1C /* LoadCatInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E16523171E27C3BA000D8E1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E16523181E27C3F1000D8E1C /* LoadCatViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E165231A1E27C5DF000D8E1C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E165231B1E27C886000D8E1C /* LoadCatPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E165231D1E27D899000D8E1C /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				E165231E1E27D8A6000D8E1C /* LoadCatViewWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		E1A9DD281E3A6BD50036D0CD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E1A9DD291E3A6BF00036D0CD /* FilterOperation.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E1AF2EBF1E3A676200CC0B3F /* EditCat */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF2EC01E3A676200CC0B3F /* ApplicationLogic */,
+				E1AF2EC11E3A676200CC0B3F /* UserInterface */,
+			);
+			path = EditCat;
+			sourceTree = "<group>";
+		};
+		E1AF2EC01E3A676200CC0B3F /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF2EC21E3A684900CC0B3F /* Interactors */,
+			);
+			path = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		E1AF2EC11E3A676200CC0B3F /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF2EC31E3A687D00CC0B3F /* Presenter */,
+				E1AF2EC41E3A687D00CC0B3F /* View */,
+				E1AF2EC51E3A687D00CC0B3F /* Wireframe */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		E1AF2EC21E3A684900CC0B3F /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				E1A9DD2B1E3A6C560036D0CD /* FilterCatImageInteractor.swift */,
+				E1A9DD2D1E3A7B550036D0CD /* PrepareSampleImagesInteractor.swift */,
+				D0DBFC0E1E48C664002CE736 /* SaveImageInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		E1AF2EC31E3A687D00CC0B3F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E1A9DD261E3A6B930036D0CD /* EditCatPresenter.swift */,
+			);
+			name = Presenter;
+			path = " Presenter";
+			sourceTree = "<group>";
+		};
+		E1AF2EC41E3A687D00CC0B3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1A9DD221E3A68D00036D0CD /* EditCatViewController.swift */,
+				E1A9DD241E3A6B2F0036D0CD /* ImageFilterCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1AF2EC51E3A687D00CC0B3F /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				E1A9DD2F1E3A83760036D0CD /* EditCatWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E15A13751E2C00AC00A10078 /* Cat_VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15A137F1E2C00AC00A10078 /* Build configuration list for PBXNativeTarget "Cat_VIPERTests" */;
+			buildPhases = (
+				6997225BFE982B21497FD260 /* [CP] Check Pods Manifest.lock */,
+				E15A13721E2C00AC00A10078 /* Sources */,
+				E15A13731E2C00AC00A10078 /* Frameworks */,
+				E15A13741E2C00AC00A10078 /* Resources */,
+				1FC4A46F535EF0E1E8090009 /* [CP] Embed Pods Frameworks */,
+				203E9C823860CF7AB3677A27 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E15A137C1E2C00AC00A10078 /* PBXTargetDependency */,
+			);
+			name = Cat_VIPERTests;
+			productName = Cat_VIPERTests;
+			productReference = E15A13761E2C00AC00A10078 /* Cat_VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E16522EB1E26C7E3000D8E1C /* Cat_VIPER */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E16522FE1E26C7E3000D8E1C /* Build configuration list for PBXNativeTarget "Cat_VIPER" */;
 			buildPhases = (
+				793D544C3FBD1F5435323F5D /* [CP] Check Pods Manifest.lock */,
 				E16522E81E26C7E3000D8E1C /* Sources */,
 				E16522E91E26C7E3000D8E1C /* Frameworks */,
 				E16522EA1E26C7E3000D8E1C /* Resources */,
+				BC18A97FD77DDD9C0A370C70 /* [CP] Embed Pods Frameworks */,
+				8D24477F5B97003DFD3372F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -92,8 +431,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = Robert;
+				ORGANIZATIONNAME = Thinkmobiles;
 				TargetAttributes = {
+					E15A13751E2C00AC00A10078 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y48M5B57X6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E16522EB1E26C7E3000D8E1C;
+					};
 					E16522EB1E26C7E3000D8E1C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Y48M5B57X6;
@@ -115,11 +460,20 @@
 			projectRoot = "";
 			targets = (
 				E16522EB1E26C7E3000D8E1C /* Cat_VIPER */,
+				E15A13751E2C00AC00A10078 /* Cat_VIPERTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E15A13741E2C00AC00A10078 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15A138B1E2C0ACB00A10078 /* stubbedCatImage.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E16522EA1E26C7E3000D8E1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,17 +486,147 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FC4A46F535EF0E1E8090009 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat_VIPERTests/Pods-Cat_VIPERTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		203E9C823860CF7AB3677A27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat_VIPERTests/Pods-Cat_VIPERTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6997225BFE982B21497FD260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		793D544C3FBD1F5435323F5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D24477F5B97003DFD3372F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat_VIPER/Pods-Cat_VIPER-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC18A97FD77DDD9C0A370C70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cat_VIPER/Pods-Cat_VIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E15A13721E2C00AC00A10078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15A13831E2C06AB00A10078 /* XCTestHTTPStubExtension.swift in Sources */,
+				E1FAFB8A1E45E0C2006727F1 /* TestEditScreen.swift in Sources */,
+				E1FAFB8E1E49134E006727F1 /* TestPrepareSampleImageInput.swift in Sources */,
+				E1FAFB8C1E49084A006727F1 /* TestFilterCatImageInteractor.swift in Sources */,
+				E15A13811E2C015E00A10078 /* TestPresenter.swift in Sources */,
+				E15A13851E2C06C600A10078 /* CatProviderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E16522E81E26C7E3000D8E1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E16522F21E26C7E3000D8E1C /* ViewController.swift in Sources */,
+				D009DF3E1E4DE9C100B633CC /* Presenter.swift in Sources */,
+				E16523091E26D591000D8E1C /* Cat.swift in Sources */,
+				E1A9DD301E3A83760036D0CD /* EditCatWireframe.swift in Sources */,
+				E1A9DD2A1E3A6BF00036D0CD /* FilterOperation.swift in Sources */,
+				E16523191E27C3F1000D8E1C /* LoadCatViewController.swift in Sources */,
+				D009DF3C1E4DE8BB00B633CC /* View.swift in Sources */,
+				E1A9DD251E3A6B2F0036D0CD /* ImageFilterCell.swift in Sources */,
+				E165230B1E26D597000D8E1C /* CatProvider.swift in Sources */,
+				E16523141E26DB31000D8E1C /* LoadCatInteractor.swift in Sources */,
 				E16522F01E26C7E3000D8E1C /* AppDelegate.swift in Sources */,
+				E1A9DD2E1E3A7B550036D0CD /* PrepareSampleImagesInteractor.swift in Sources */,
+				E1A9DD2C1E3A6C560036D0CD /* FilterCatImageInteractor.swift in Sources */,
+				D0DBFC0F1E48C664002CE736 /* SaveImageInteractor.swift in Sources */,
+				E165231F1E27D8A6000D8E1C /* LoadCatViewWireframe.swift in Sources */,
+				E1A9DD271E3A6B930036D0CD /* EditCatPresenter.swift in Sources */,
+				E1A9DD231E3A68D00036D0CD /* EditCatViewController.swift in Sources */,
+				E165230D1E26DA48000D8E1C /* Dependencies.swift in Sources */,
+				E165231C1E27C886000D8E1C /* LoadCatPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E15A137C1E2C00AC00A10078 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E16522EB1E26C7E3000D8E1C /* Cat_VIPER */;
+			targetProxy = E15A137B1E2C00AC00A10078 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E16522F31E26C7E3000D8E1C /* Main.storyboard */ = {
@@ -164,6 +648,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E15A137D1E2C00AC00A10078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC50DB7AA9D4EEE2030DFBD1 /* Pods-Cat_VIPERTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y48M5B57X6;
+				INFOPLIST_FILE = Cat_VIPERTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.Cat-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cat_VIPER.app/Cat_VIPER";
+			};
+			name = Debug;
+		};
+		E15A137E1E2C00AC00A10078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DE953B3035DBAB6232C74C /* Pods-Cat_VIPERTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y48M5B57X6;
+				INFOPLIST_FILE = Cat_VIPERTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.Cat-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cat_VIPER.app/Cat_VIPER";
+			};
+			name = Release;
+		};
 		E16522FC1E26C7E3000D8E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -259,33 +775,48 @@
 		};
 		E16522FF1E26C7E3000D8E1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3F6826CC28221463B13CD21 /* Pods-Cat_VIPER.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y48M5B57X6;
 				INFOPLIST_FILE = Cat_VIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.Cat-VIPER";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmobiles.Cat-VIPER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E16523001E26C7E3000D8E1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDF71724F92FB0D75E22345 /* Pods-Cat_VIPER.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y48M5B57X6;
 				INFOPLIST_FILE = Cat_VIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.robi.Cat-VIPER";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thinkmobiles.Cat-VIPER";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E15A137F1E2C00AC00A10078 /* Build configuration list for PBXNativeTarget "Cat_VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E15A137D1E2C00AC00A10078 /* Debug */,
+				E15A137E1E2C00AC00A10078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E16522E71E26C7E3000D8E1C /* Build configuration list for PBXProject "Cat_VIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -302,6 +833,7 @@
 				E16523001E26C7E3000D8E1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
